@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: blueviolet;
+            color: goldenrod;
+        }
+
+        a {
+            color: gold;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: greenyellow
+        }
+
+        .especial::before {
+            content: '🔥';
+        }
+
+        .especial::after {
+            content: '🔥';
+        }
+
+        p {
+            width: 450px;
+            font-weight: lighter;
+        }
+
+        p::first-line {
+            color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bolder;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li>
+            <a href="https://youtube.com/@Yuu-Dev" target="_blank" rel="external" class="especial">Canal do Youtube</a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/yuu_dev/" target="_blank" rel="external" class="especial">Instagram</a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/profile.php?id=100093460090210" target="_blank" rel="external" class="especial">Facebook</a>
+        </li>
+    </ul>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ea sunt ad quo, impedit explicabo repellat tempora a aspernatur rerum quisquam ullam officiis pariatur distinctio, consequuntur vitae ipsam fugiat dicta?
+    </p>
+</body>
+</html>

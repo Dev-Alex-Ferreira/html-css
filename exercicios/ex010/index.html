@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Voçê pode ler meu webtoon através da <a href="https://fliptru.com.br/"; target="_blank"; rel="external";>Fliptru</a></p>
+
+    <!--Podemos criar um link para uma pagina extrna usando a tag "a"(âncora) para envelopar a parte do texto que deve se torna um link. Juntamente com ela temos temos o atributo "href", que significa referencia a hipertexto, com ela podemos inserir a url de uma pagina externa a uma parte do nosso documento html dentro da tag âncora-->
+
+    <!--Porém quando utilizamos a tag "a" desta maneira, a pagina externa  irá sobrepor a sua pagina no navegador, tornando provavel que o usuario não retorne a sua pagina novamente. Nesse caso devemos usar dentro da tag de abertura da âncora o atributo "target", que significa alvo. ele escolhe o alvo onde nosso link externo de ser carregado, e para carrega-lo em outra janela colocamos o valor "_blank", que o fará ser carregado em uma janela vazia.-->
+
+    <P>Voçê pode também me <a href="https://fliptru.com.br/users/profile/"; target="_blank"; rel="external";>seguir na fliptru</a></P></P>
+    <h1>Usando links internos</h1>
+
+    <!--Os links internos fazem a relação com outra pagina que esta no servidor e diz respeito a nossa propria pagina-->
+
+    <p>Esta é a primeira pagina do site. Se voçê quiser acessar a segunda pagina clicando <a href="pag-002.html"; rel="next"; target="_self";>aqui</a></p>
+    <p>Voçê também pode visitar nossa <a href="./noticias/pagina-003.html"; rel="next"; target="_self";>pagina de noticias</a></p>
+    <h1>Links para download</h1>
+    <ul>
+        <!--Quando o "href" tem um sinal de "#" significa que o link esta vazio.-->
+        <li><a href="livro/08 - Formatação de Textos.pdf"; download="Formatação de Textos.pdf">Baixar o livro em pdf</a></li>
+        <li><a href="livro/08 - Formatação de Textos.zip"; type="application/zip">Livro compactado em zip</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Estilos de Formatação</title>
+    <style>
+        body {
+            font-size: 12px;
+        }
+        .mark {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+    <h2>Negrito / Destaque</h2>
+
+    <!--A tag b é focado em forma enquanto a tag strong é focada em significado. Como o html5 é focado em semântica, devemos usar a tag strong quando queremos destacar algo no html e deixar a forma por conta do css.-->
+
+    <p>Nesta frase temos um <b>termo em negrito</b>  usando a tag b (não semântica)</p>
+    <p>Nesta frase temos um <strong>termo em destaque</strong> usando a tag strong (semântica)</p>
+    <h2>Itálico / Ênfase</h2>
+
+    <!--Assim como no exemplo acima a tag "em"  possui um significado (assim como a tag "strong") ela serve para dar ênfase a uma palavra ou frase no html. Devemos usar a tag "em" ao inves da tag "i" pelo fato da tag "em" possuir significado justamente de dar ênfase, fazendo dela uma tag semântica, enquanto que a tag "i" serve apenas para mudar o seu estilo, e como vimos antes,quando se trata de estilo utilizamos o css-->
+
+    <p>Nesta frase temos um <i>termo em itálico</i> usando a tag i (não semântica)</p>
+    <p>Nesta frase temos um <em>termo em ênfase</em> usando a tag em (semântica)</p>
+
+    <!--Formatações Especiais-->
+
+    <!--Utilizamos a tag "mark"quando queremos fazer um marcação no texto html. No entanto, esta é uma tag semântica, logo, ela foca apenas no sentido de marcação, caso seja do interesse do desenvolvedor mudar, por exemplo, a cor do "marcador", ele deverá então modificar o estilo do seu html utlizando o css.-->
+
+    <h2>Texto Marcado</h2>
+    <p>Podemos criar também <mark style="background-color
+    : aqua;">um texto marcado</mark> usando a tag MARK.</p>
+
+    <!--Umas das formas de se aplicar o css no nosso documento html é fazendo uso do atributo "style" como no exemplo acima. Ele é perfeito para quando queremos apenas alterar o estilo de uma tag em especifico.-->
+
+    <p>E no outro paráfago, temos <mark>um texto marcado</mark> no final</p>
+
+    <!--Porém, quando temos mais de uma tag com mesmo nome, elas não irão herdar as caracteristicas atribuidas a tag anterior de mesmo nome(como foi visto no exemplo acima). Nesses casos onde a varias tags de mesmo nome que necessitam ter um mesmo estilo, atributo "style" se torna uma opção dificil de se trabalhar, e a menos indicada visto que temos outras formas mais tranquilas e eficases na hora de estilizar usando css.-->
+
+    <p>Lorem ipsum dolor sit, amet <mark class="mark">consectetur adipisicing elit</mark>. Odio ab nulla qui odit harum officiis obcaecati corporis deserunt est mollitia ad, laboriosam delectus asperiores animi error sequi adipisci esse a.</p>
+
+    <!--Uma dessas formas é criando um arquivo css onde estilizariamos os seletores css e vinculariamos esse novo arquivo ao nosso arquivo html já existente e assim aplicariamos o estilo. A outra maneira seria a que utilizei acima. Primeiro criamos a tag "style" dentro da tag "head" e dentro desta nova tag criamos um seletor e as propriedades css que desejamos estilizar nesta pagina.-->
+
+    <h2>Texto Grande e Pequeno</h2>
+
+    <!--Existe uma tag que se tornou obsoleta com a chegada do html5, ela se chama "big" e tornava alguma parte do texto um pouco maior doque o normal. Porém era apenas focada na forma(estilo) e não possuia semântica, e quando se trata apenas de estilo usamos o css.
+        Mas, curiosamente, a sua contra-parte, a tag "small" que tem como 
+    finalidade deixar as letras menores que o normal, não se tornou obsoleta.Consideramos que seja porque letras pequenas são utilizadas para dar um destaque em alguma palta importante, porém secundaria.-->
+
+    <p>Estamos criando <big>um texto grande</big> e <small>um texto pequeno</small> neste parágrafo</p>
+    <h2>Texto Deletado</h2>
+
+    <!--Uma outra tag de formatação de texto é a tag "del" utilizada para indicar que determinada parte do texto deve ser desconsiderada, pois foi excluida do mesmo-->
+
+    <p>Podemos marcar <del>um texto como excluido</del> para indicar que ele deve ser li, mas não considerado</p>
+    <h2>Texto Inserido</h2>
+
+    <!--A contra-parte da tag "del" é a tag "ins" que serve para dar ênfase e indicar que esse texto veio a ser adicionado depois.-->
+
+    <p>Podemos marca <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois</p>
+
+    <p>Existe também a tag "u" que nos da <u>um texto sublinhado</u>, mas não-semântico</p>
+
+    <!--Não é recomendado utilizar a tag "u" no html5, já que ela não possui semântica, o mais correto seria utilizar a tag "ins" ao invés dela-->
+
+    <h2>Texto Sobrecrito</h2>
+    <p>Para inserir coisas do tipo: x<sup>20</sup>+3</p>
+    <h2>Texto Subscrito</h2>
+    <p>Para inserir coisas do tipo: H<sub>2</sub>O</p>
+</body>
+</html>

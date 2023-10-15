@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+body {
+    background-color: black;
+    color: white;
+    font: normal 0.7em arial, helvetica, verdana, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style-position: inside;
+}

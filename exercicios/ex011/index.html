@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador.</p>
+
+    <!--
+        Quando queremos que uma imagem se adapte a necessidade do usuário, ou melhor dizendo, ao dispositivo que ele esteja utilanzando, nós utilizaremos a tag "picture".
+        Ela nos permite, assim como a tag "img", mostrar-mos uma imagem na tela com a vantagem de configurarmos para que possamos mostrar a imagem com tamanho adequado para cado dispositivo.
+    -->
+
+    <picture>
+
+        <!--
+            Para que a adaptação da imagem seja possivel, nós utilizamos duas tags: "img" e "source: media type".
+
+            Img:
+            Img será a imagem padrão a ser exibida dentro de picture. Ela é um importante parametro na hora altomatizar a adaptação da imagem.
+
+            Source:
+            É a tag crucial para que a imagem se torne adaptavel. Antes de mais nada nós precisaremos ter duas outras imagens identicas a imgem usada como padrão com tamanho diferentes em escala de maior para menor ou vice-versa. 
+            Em seguida voçê deve escolher se a imagem padrão será a maior ou a menor imagem(isso é crucial para saber como prosseguir)
+        -->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexisivel">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5.</p>
+    
+    <h2>Primeira maneira</h2>
+    <audio src="midias/doflamingo-m4rkin.mp3"; controls ></audio>
+    <!--MP3 WAV OGG-->
+    <h2>Segunda maneira</h2>
+    <audio preload="metadata" autoplay controls>
+        <source src="midias/doflamingo-m4rkin.mp3" type="audio/mpeg">
+        <source src="midias/doflamingo-m4rkin.ogg" type="audio/ogg">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midias/doflamingo-m4rkin.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>

@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+:root {
+    --fonte-padrao: arial, helvetica, verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(50, 50, 245);
+    color: white;
+    font: normal 1.2em var(--fonte-padrao);
+}
+
+h1 {
+    text-align: center;
+    margin: 0px;
+}
+
+p {
+    width: 350px;
+    text-align: justify;
+    margin: 14px auto;
+}
+
+img {
+    display: block;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.363);
+}

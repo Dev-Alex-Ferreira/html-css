@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+
+    <!--Listas ordenadas são aquelas nas quais a ordem faz diferença. Nessas horas devemos usar a tag "ol", pois ela nos garante inumerar a lista com mais facilidade apenas colocando os itens de lista(tag "li") na ordem de prioridade que desejamos e a tag "ol" irá inumera-los na ordem correta para nós.-->
+
+    <ol type="i"><!--types: 1 A a I i-->
+
+        <!--Através do atributo "type" nós podemos escolher o tipo de ordenação dos itens da lista como de A-Z ou números romanos por exemplo.-->
+
+        <!--Dentro da tag "li" vão os itens ou afazeres da nossa lista sejam eles qual forem.-->
+        <li>Acordar</li>
+        <li>Ligar para Andreza</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+    </ol>
+    <h2>Listas não ordenadas</h2>
+
+    <!--Quando a ordem da lista nào importa para nós devemos utilizar a tag "ul"-->
+
+    <ul type="circle"> <!--Type: disc circle square-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Alface</li>
+        <li>Arroz</li>
+        <li>feijão</li>
+    </ul>
+    <h2>Minhas Linguagens Favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+
+        <!--Para que a próxima lista ordenada comece com a sequencia do próximo numero ou letra da lista anterior, nós devemos usar o parametro start. So que o atributo start trabalha com numeros, logo, devemes indicar de qual elemento html ele deve começar usamdo usando a quantidade de elementos html que o elemento em questão representa.-->
+
+        <ol type="a" start="5">
+            <li>Javascript</li>
+            <li>Python</li>
+            <li>PHP</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h2>Meus Jogos Favoritos</h2>
+    <ol>
+        <li>PlayStation</li>
+        <ul>
+            <li>Naruto Ultimate Ninja</li>
+            <ul>
+                <li>Naruto Ultimate Ninja 3</li>
+                <li>Naruto Ultimate Ninja 4</li>
+                <li>Naruto Ultimate Ninja 5</li>
+            </ul>
+            <li>GTA</li>
+            <ul>
+                <li>GTA 3</li>
+                <li>GTA Vice City</li>
+                <li>GTA San Andreas</li>
+            </ul>
+            <li>Bully</li>
+            <li>Metal Slug</li>
+        </ul>
+        <li>Celular</li>
+        <ul>
+            <li>Honor of Kings</li>
+            <li>Duel Links</li>
+            <li>Mobile Legends</li>
+            <li>Bully</li>
+        </ul>
+    </ol>
+    <h2>Lista de Definições</h2>
+
+    <!--A tag "dl" serve para criarmos listas de definições. Essas listas são como um dicionario onde temos um termo e em seguida sua definição.-->
+
+    <dl>
+        <dt>HTML</dt>
+
+        <!--"dt" é a tag onde colocamos os termos que queremos.-->
+
+        <dd>Linguagem de marcação para o conteúdo de um site.</dd>
+
+        <!--Enquanto que a tag "dd" é onde inserimos a sua de finição.-->
+
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do estilo de um site.</dd>
+        <dt>Javascript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+</body>
+</html>
