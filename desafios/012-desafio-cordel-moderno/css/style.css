@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    background-color: black;
+    height: 75px;
+    padding: 35px;
+    margin: 0px;
+}
+
+h1.titulo-principal {
+    text-align: center;
+    font: normal 45px 'Passion One';
+    color: white;
+    margin: auto;
+}
+
+span.titulo-letras-minusculas {
+    font-size: 30px;
+}
+
+p.paragrafo-principal {
+    text-align: center;
+    font: normal 0.7em arial;
+    color: white;
+    margin: auto;
+}
+
+a.direitos-autorais {
+    text-decoration: none;
+    color: white;
+}
+
+a.direitos-autorais:hover {
+    text-decoration: underline;
+}
